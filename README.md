@@ -5,6 +5,21 @@ You might also be interested in:
 - [ESP32-BLE-Mouse](https://github.com/T-vK/ESP32-BLE-Mouse)
 - [ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad)
 
+## Fork
+This is a fork from the [amazing work done by T-vK][0]
+
+### Differences
+I will applying the PR's from [fordcrews][1] and [aerielist][2] - these helped me get it compiling for my version of the Arduino IDE (2.3.2) and seemed to create a reliable connection for my boards.
+
+The PR will be merged and remain visible for anyone.
+
+### ESP 32 Boards
+| Board | Manufacturer | Working |
+| ----- | ------------ | ------- |
+| ESP32 C3 Zero | [Waveshare][3] | :construction: |
+| ESP32 S3 Zero | [Espressif][4] | :construction: |
+| ESP32 C3 SuperMini | [MakerGo][5] | :construction: |
+| XIAO ESP32 C3 | [Seeed Studio][4] | :construction: |
 
 ## Features
 
@@ -160,3 +175,11 @@ build_flags =
 Credits to [chegewara](https://github.com/chegewara) and [the authors of the USB keyboard library](https://github.com/arduino-libraries/Keyboard/) as this project is heavily based on their work!  
 Also, credits to [duke2421](https://github.com/T-vK/ESP32-BLE-Keyboard/issues/1) who helped a lot with testing, debugging and fixing the device descriptor!
 And credits to [sivar2311](https://github.com/sivar2311) for adding NimBLE support, greatly reducing the memory footprint, fixing advertising issues and for adding the `setDelay` method.
+
+[0]: https://github.com/T-vK/ESP32-BLE-Keyboard
+[1]: https://github.com/T-vK/ESP32-BLE-Keyboard/pull/303/files
+[2]: https://github.com/T-vK/ESP32-BLE-Keyboard/pull/28/files
+[3]: https://www.waveshare.com/wiki/ESP32-C3-Zero
+[4]: https://www.espressif.com/en/products/socs/esp32-s3
+[5]: https://www.tindie.com/products/adz1122/esp32-c3-development-board-esp32-supermini/
+[6]: https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
