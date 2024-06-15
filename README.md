@@ -14,12 +14,12 @@ I will applying the PR's from [fordcrews][1] and [aerielist][2] - these helped m
 The PR will be merged and remain visible for anyone.
 
 ### ESP 32 Boards
-| Board | Manufacturer | Working |
-| ----- | ------------ | ------- |
-| ESP32 C3 Zero | [Waveshare][3] | :construction: |
-| ESP32 S3 Zero | [Espressif][4] | :construction: |
-| ESP32 C3 SuperMini | [MakerGo][5] | :construction: |
-| XIAO ESP32 C3 | [Seeed Studio][4] | :construction: |
+| Board | Manufacturer | Working | ----- |
+| ----- | ------------ | ------- | ----- |
+| ESP32 C3 Zero | [Waveshare][3] | :white_check_mark: | |
+| ESP32-S3@Xtensa LX7 | [Espressif][4] | :white_check_mark: | |
+| ESP32 C3 SuperMini | [MakerGo][5] | :x: | Connection trouble |
+| XIAO ESP32 C3 | [Seeed Studio][4] | :warning: | Unreliable connection and requires antenna |
 
 ## Features
 

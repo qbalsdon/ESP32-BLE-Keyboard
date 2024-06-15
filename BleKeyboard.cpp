@@ -103,7 +103,7 @@ BleKeyboard::BleKeyboard(String deviceName, String deviceManufacturer, uint8_t b
 
 void BleKeyboard::begin(void)
 {
-  BLEDevice::init(deviceName);
+  BLEDevice::init(deviceName.c_str());
   BLEServer* pServer = BLEDevice::createServer();
   pServer->setCallbacks(this);
 
@@ -114,7 +114,7 @@ void BleKeyboard::begin(void)
 
   outputKeyboard->setCallbacks(this);
 
-  hid->manufacturer()->setValue(deviceManufacturer);
+  hid->manufacturer()->setValue(deviceManufacturer.c_str());
 
   hid->pnp(0x02, vid, pid, version);
   hid->hidInfo(0x00, 0x01);
@@ -128,7 +128,6 @@ void BleKeyboard::begin(void)
 
   BLESecurity* pSecurity = new BLESecurity();
   pSecurity->setAuthenticationMode(ESP_LE_AUTH_BOND);
-//   pSecurity->setCapability(ESP_IO_CAP_NONE);
 
 #endif // USE_NIMBLE
 
